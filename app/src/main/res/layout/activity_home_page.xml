@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <com.google.android.material.appbar.MaterialToolbar
+                            android:id="@+id/toolBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            app:title="UMP Student Zone"
+                            app:titleTextColor="@color/white"
+                            app:navigationIcon="@drawable/ic_menu_24"
+                            app:navigationIconTint="@color/white"
+                            android:background="@color/primaryPrimaryDark"
+
+                            />
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                <GridLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="70dp"
+                                    android:alignmentMode="alignMargins"
+                                    android:background="@drawable/bgapp2"
+                                    android:columnCount="2"
+                                    android:columnOrderPreserved="false"
+                                    android:rowCount="3">
+
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="100dp"
+                                            android:layout_height="120dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:id="@+id/dip_agr"
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="DIPAGR"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:id="@+id/dip_ani"
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="DIPAN"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ********Segments************
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:id="@+id/dip_con"
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="DIPCON"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:id="@+id/dip_hos"
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="DIPHOS"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:contentDescription=""
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="HCEM"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ********Segments************
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="HICT"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ********Segments************
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="DIPICT"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ********Segments************
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BAGRIC"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ********Segments************
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BSCAGR"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ********Segments************
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BSCFOR"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        *******Segments*****
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BSC"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BSCENV"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BICT"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="B Ed"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BCOM"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BADMIN"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BDEV"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="LLB"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="ADPAGR"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="ADPAGRAE"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="ADAGRAPM"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="ADPANI"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="ADPCON"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="ADPICT"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="ADPHOS"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA HON(GEO)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA HON(PSY)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BSC HON(GEO)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BSC HON(ENT)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BSC HON(ECL)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="B Ed Hon"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BDEV HON"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BCOM HON(ECON)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA HON(ENG)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA HON(SOC)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA HON(GS)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BADMIN HON"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA HON(SISWATI)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="BA HON(IP)"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="PGCON"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="PGICT"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="PGHOS"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="M.Sc."
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="MASTERS OF Edu"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="MASTERS OF ARTS"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="M.Comm"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="MASTERS OF DEV"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="PhD in Science"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        ******Segments******
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="120dp"
+                                            android:layout_height="140dp"
+                                            android:layout_rowWeight="1"
+                                            android:layout_columnWeight="1"
+                                            android:layout_margin="18dp"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="6dp">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical"
+                                                    android:padding="16dp">
+
+                                                        <ImageView
+                                                            android:layout_width="70dp"
+                                                            android:layout_height="70dp"
+                                                            android:background="@drawable/logo" />
+
+                                                        <TextView
+                                                            android:layout_width="80dp"
+                                                            android:layout_height="wrap_content"
+                                                            android:fontFamily="monospace"
+                                                            android:text="PhD in DEV STD"
+                                                            android:textAlignment="center"
+                                                            android:textSize="15sp" />
+                                                </LinearLayout>
+                                        </androidx.cardview.widget.CardView>
+
+
+                                </GridLayout>
+                        </LinearLayout>
+                </ScrollView>
+        </RelativeLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/headerfile"
+            app:menu="@menu/sidemenu"/>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

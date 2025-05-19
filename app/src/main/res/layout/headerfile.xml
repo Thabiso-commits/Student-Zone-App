@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_header"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UMP Student Zone"
+        android:layout_below="@+id/profile_header"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Study Smart!!!!!!"
+        android:layout_below="@+id/app_name"
+        android:textColor="@color/lightgrey"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"/>
+
+    <View
+        style="@style/line"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/slogan" />
+
+
+
+
+
+
+</RelativeLayout>
